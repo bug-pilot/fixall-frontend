@@ -1,11 +1,10 @@
 import { Outlet } from 'react-router-dom';
+import Header from '../components/Header';
 
 function Layout() {
   return (
     <div className="layout">
-      <header className="layout-header">
-        <h1>FixAll Home Service</h1>
-      </header>
+      <Header />
       <main className="layout-main">
         <Outlet />
       </main>

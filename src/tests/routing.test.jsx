@@ -78,7 +78,7 @@ describe('Routing', () => {
     });
     render(<RouterProvider router={router} />);
     expect(
-      screen.getByRole('heading', { name: /fixall home service/i })
+      screen.getByRole('link', { name: /fixall/i })
     ).toBeInTheDocument();
     expect(screen.getByText(/all rights reserved/i)).toBeInTheDocument();
   });
