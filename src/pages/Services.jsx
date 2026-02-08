@@ -13,16 +13,16 @@ import DoorWindowImg from '../pictures/Door-WindowRepair.png';
 function Services() {
   const plumbingServices = [
     {
-      title: 'Leak Repair',
-      description: 'Fast diagnosis and repair of water leaks in pipes, fixtures, and joints.',
-      image: LeakRepairImg,
-      tags: ['Leak Repairs', 'Pipe Work'],
-    },
-    {
       title: 'Plumbing Services',
       description: 'From leaky faucets to pipe installations, I handle all your plumbing needs with precision and care. Emergency repairs available.',
       image: PlumbingServicesImg,
       tags: ['Main Line Maintenance', 'Leak Repairs', 'Fixture Installation', 'Pipe Work'],
+    },
+    {
+      title: 'Leak Repair',
+      description: 'Fast diagnosis and repair of water leaks in pipes, fixtures, and joints.',
+      image: LeakRepairImg,
+      tags: ['Leak Repairs', 'Pipe Work'],
     },
     {
       title: 'Fixture Installation',

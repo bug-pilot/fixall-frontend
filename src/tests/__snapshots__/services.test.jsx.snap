@@ -38,51 +38,6 @@ exports[`Services Page > matches snapshot 1`] = `
               class="service-card-image"
             >
               <img
-                alt="Leak Repair"
-                src="/src/pictures/leak-repair.png"
-              />
-              <div
-                class="service-card-icon"
-              >
-                💧
-              </div>
-            </div>
-            <div
-              class="service-card-content"
-            >
-              <h3
-                class="service-card-title"
-              >
-                Leak Repair
-              </h3>
-              <p
-                class="service-card-description"
-              >
-                Fast diagnosis and repair of water leaks in pipes, fixtures, and joints.
-              </p>
-              <div
-                class="service-card-tags"
-              >
-                <span
-                  class="service-tag"
-                >
-                  Leak Repairs
-                </span>
-                <span
-                  class="service-tag"
-                >
-                  Pipe Work
-                </span>
-              </div>
-            </div>
-          </article>
-          <article
-            class="service-card"
-          >
-            <div
-              class="service-card-image"
-            >
-              <img
                 alt="Plumbing Services"
                 src="/src/pictures/plumbing-services.png"
               />
@@ -122,6 +77,51 @@ exports[`Services Page > matches snapshot 1`] = `
                   class="service-tag"
                 >
                   Fixture Installation
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Pipe Work
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-card-image"
+            >
+              <img
+                alt="Leak Repair"
+                src="/src/pictures/leak-repair.png"
+              />
+              <div
+                class="service-card-icon"
+              >
+                💧
+              </div>
+            </div>
+            <div
+              class="service-card-content"
+            >
+              <h3
+                class="service-card-title"
+              >
+                Leak Repair
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                Fast diagnosis and repair of water leaks in pipes, fixtures, and joints.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Leak Repairs
                 </span>
                 <span
                   class="service-tag"
