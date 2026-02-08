@@ -27,9 +27,9 @@ describe('Routing', () => {
       initialEntries: ['/'],
     });
     render(<RouterProvider router={router} />);
-    const headings = screen.getAllByRole('heading', { name: /home/i });
-    // Page heading (not the site title)
-    expect(headings.some((h) => h.textContent === 'Home')).toBe(true);
+    expect(
+      screen.getByRole('heading', { name: /one call for all your home fixes/i })
+    ).toBeInTheDocument();
   });
 
   it('renders services page at /services', () => {
