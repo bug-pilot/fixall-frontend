@@ -4,33 +4,54 @@
 }
 
 .reviews-hero {
-  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 50%, var(--primary) 100%);
   color: white;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(247, 184, 1, 0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .reviews-hero-container {
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .reviews-hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 0 0 1rem 0;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .reviews-tagline {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: 0;
-  opacity: 0.95;
-  font-weight: 300;
-  line-height: 1.6;
+  opacity: 0.98;
+  font-weight: 500;
+  line-height: 1.7;
+  color: white;
 }
 
 .reviews-section {
-  padding: 4rem 2rem;
-  background-color: white;
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, white 0%, #f8f9fa 100%);
 }
 
 .reviews-container {
@@ -39,26 +60,36 @@
 }
 
 .reviews-container h2 {
-  font-size: 2rem;
-  margin: 0 0 3rem 0;
-  color: #333;
+  font-size: 2.2rem;
+  margin: 0 0 1rem 0;
+  color: var(--text-dark);
   text-align: center;
+  font-weight: 700;
+}
+
+.reviews-container h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  margin: 1rem auto 3rem;
+  border-radius: 2px;
 }
 
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
 }
 
 @media (max-width: 768px) {
   .reviews-hero {
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
 
   .reviews-hero h1 {
-    font-size: 1.75rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.8rem;
   }
 
   .reviews-tagline {
@@ -66,12 +97,16 @@
   }
 
   .reviews-section {
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
 
   .reviews-container h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .reviews-container h2::after {
+    margin: 0.75rem auto 2rem;
   }
 
   .reviews-grid {

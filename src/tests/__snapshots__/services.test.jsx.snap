@@ -39,7 +39,7 @@ exports[`Services Page > matches snapshot 1`] = `
             >
               <img
                 alt="Leak Repair"
-                src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&h=300&fit=crop"
+                src="/src/pictures/leak-repair.png"
               />
               <div
                 class="service-card-icon"
@@ -84,7 +84,7 @@ exports[`Services Page > matches snapshot 1`] = `
             >
               <img
                 alt="Plumbing Services"
-                src="https://images.unsplash.com/photo-1585707572537-64cfc0c03f7b?w=500&h=300&fit=crop"
+                src="/src/pictures/plumbing-services.png"
               />
               <div
                 class="service-card-icon"
@@ -139,7 +139,7 @@ exports[`Services Page > matches snapshot 1`] = `
             >
               <img
                 alt="Fixture Installation"
-                src="https://images.unsplash.com/photo-1584622181563-430f63602d4b?w=500&h=300&fit=crop"
+                src="/src/pictures/Fixture_instalation.png"
               />
               <div
                 class="service-card-icon"
@@ -199,7 +199,7 @@ exports[`Services Page > matches snapshot 1`] = `
             >
               <img
                 alt="Electrical Services"
-                src="https://images.unsplash.com/photo-1621905267537-b85faf00c4b7?w=500&h=300&fit=crop"
+                src="/src/pictures/Electrical-services.png"
               />
               <div
                 class="service-card-icon"
@@ -249,7 +249,7 @@ exports[`Services Page > matches snapshot 1`] = `
             >
               <img
                 alt="Outlet & Switch Repair"
-                src="https://images.unsplash.com/photo-1581092162562-40038f81f10e?w=500&h=300&fit=crop"
+                src="/src/pictures/Outlet-Switch-Repair.png"
               />
               <div
                 class="service-card-icon"
@@ -294,7 +294,7 @@ exports[`Services Page > matches snapshot 1`] = `
             >
               <img
                 alt="Lighting Solutions"
-                src="https://images.unsplash.com/photo-1565636192335-14c46fa1120d?w=500&h=300&fit=crop"
+                src="/src/pictures/Lighting-solutions.png"
               />
               <div
                 class="service-card-icon"
@@ -354,7 +354,7 @@ exports[`Services Page > matches snapshot 1`] = `
             >
               <img
                 alt="Interior & Exterior Painting"
-                src="https://images.unsplash.com/photo-1589939705066-5470cc9b6230?w=500&h=300&fit=crop"
+                src="/src/pictures/Interior-Exterior-Painting.png"
               />
               <div
                 class="service-card-icon"
@@ -409,7 +409,7 @@ exports[`Services Page > matches snapshot 1`] = `
             >
               <img
                 alt="General Handyman Work"
-                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop"
+                src="/src/pictures/General-Handyman-Work.png"
               />
               <div
                 class="service-card-icon"
@@ -469,7 +469,7 @@ exports[`Services Page > matches snapshot 1`] = `
             >
               <img
                 alt="Door & Window Repair"
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop"
+                src="/src/pictures/Door-WindowRepair.png"
               />
               <div
                 class="service-card-icon"

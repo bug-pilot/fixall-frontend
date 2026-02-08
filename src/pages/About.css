@@ -4,46 +4,67 @@
 }
 
 .about-hero {
-  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 50%, var(--primary) 100%);
   color: white;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(247, 184, 1, 0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .about-hero-container {
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .about-hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 0 0 1rem 0;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .about-tagline {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: 0;
-  opacity: 0.95;
-  font-weight: 300;
-  line-height: 1.6;
+  opacity: 0.98;
+  font-weight: 500;
+  line-height: 1.7;
+  color: white;
 }
 
 .about-story,
 .about-values,
 .about-service-area {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
 }
 
 .about-story {
-  background-color: white;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .about-values {
-  background-color: #f9f9f9;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
 
 .about-service-area {
-  background-color: white;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .about-container {
@@ -54,17 +75,30 @@
 .about-story h2,
 .about-values h2,
 .about-service-area h2 {
-  font-size: 2rem;
-  margin: 0 0 2rem 0;
-  color: #333;
+  font-size: 2.2rem;
+  margin: 0 0 1rem 0;
+  color: var(--text-dark);
   text-align: center;
+  font-weight: 700;
+}
+
+.about-story h2::after,
+.about-values h2::after,
+.about-service-area h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  margin: 1rem auto 2rem;
+  border-radius: 2px;
 }
 
 .about-story p,
 .about-service-area p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
-  color: #555;
+  color: var(--text-light);
   margin: 0 0 1.5rem 0;
 }
 
@@ -75,48 +109,59 @@
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
 }
 
 .value-card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, white 0%, #f8f9fa 100%);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-left: 5px solid var(--primary);
+  position: relative;
 }
 
-.about-values .value-card {
-  background-color: white;
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  border-radius: 12px 12px 0 0;
 }
 
 .value-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(255, 107, 53, 0.15);
+  border-left-color: var(--accent);
 }
 
 .value-card h3 {
-  font-size: 1.25rem;
-  color: #0066cc;
+  font-size: 1.35rem;
+  color: var(--primary);
   margin: 0 0 1rem 0;
+  font-weight: 700;
 }
 
 .value-card p {
   margin: 0;
-  color: #666;
-  line-height: 1.6;
-  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
   .about-hero {
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
 
   .about-hero h1 {
-    font-size: 1.75rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.8rem;
   }
 
   .about-tagline {
@@ -126,14 +171,14 @@
   .about-story,
   .about-values,
   .about-service-area {
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
 
   .about-story h2,
   .about-values h2,
   .about-service-area h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   .about-story p,
@@ -143,5 +188,10 @@
 
   .values-grid {
     gap: 1.5rem;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+    border-left-width: 4px;
   }
 }

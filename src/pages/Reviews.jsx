@@ -7,21 +7,29 @@ function Reviews() {
       quote: 'FixAll came out on short notice and fixed our plumbing issue immediately. Great service and very professional!',
       author: 'Sarah M.',
       service: 'Plumbing Services',
+      rating: 5,
+      daysAgo: '3 months',
     },
     {
       quote: 'Highly professional electrical work. They explained everything clearly, answered all my questions, and cleaned up after themselves.',
       author: 'James K.',
       service: 'Electrical Services',
+      rating: 5,
+      daysAgo: '2 months',
     },
     {
       quote: 'Best handyman service we\'ve found. Reliable, courteous, affordable, and they get the job done right the first time.',
       author: 'Maria L.',
       service: 'Handyman Services',
+      rating: 5,
+      daysAgo: '1 month',
     },
     {
       quote: 'We\'ve used FixAll multiple times for different projects. They\'re always punctual, professional, and deliver excellent results.',
       author: 'Robert T.',
       service: 'Multiple Services',
+      rating: 5,
+      daysAgo: '2 weeks',
     },
   ];
 
@@ -44,6 +52,8 @@ function Reviews() {
                 quote={testimonial.quote}
                 author={testimonial.author}
                 service={testimonial.service}
+                rating={testimonial.rating}
+                daysAgo={testimonial.daysAgo}
               />
             ))}
           </div>

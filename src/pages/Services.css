@@ -4,34 +4,57 @@
 }
 
 .services-hero {
-  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 50%, var(--primary) 100%);
   color: white;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(247, 184, 1, 0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .services-hero-container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .services-hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 0 0 1rem 0;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .services-hero p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0;
-  opacity: 0.95;
+  opacity: 0.98;
+  font-weight: 500;
+  color: white;
 }
 
 .service-section {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .service-section--alt {
-  background-color: #f9f9f9;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
 
 .service-section-container {
@@ -40,25 +63,37 @@
 }
 
 .service-section h2 {
-  font-size: 2rem;
-  margin: 0 0 3rem 0;
+  font-size: 2.2rem;
+  margin: 0 0 1rem 0;
   text-align: center;
-  color: #333;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.service-section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  margin: 1rem auto 0;
+  border-radius: 2px;
 }
 
 .service-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
   .services-hero {
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
 
   .services-hero h1 {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
   }
 
   .services-hero p {
@@ -66,12 +101,12 @@
   }
 
   .service-section {
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
 
   .service-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   .service-cards-grid {

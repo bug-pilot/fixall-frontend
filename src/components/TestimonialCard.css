@@ -1,38 +1,103 @@
 .testimonial-card {
-  background-color: #f9f9f9;
-  border-left: 4px solid #0066cc;
+  background: linear-gradient(135deg, white 0%, #f8f9fa 100%);
+  border: 1px solid #e8e8e8;
   padding: 2rem;
-  border-radius: 4px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .testimonial-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-.testimonial-quote {
-  font-size: 1.1rem;
-  font-style: italic;
-  margin: 0 0 1.5rem 0;
-  color: #333;
-  line-height: 1.6;
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
-.testimonial-footer {
-  margin: 0;
+.author-info {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .testimonial-author {
   margin: 0;
-  font-weight: 600;
-  color: #333;
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.testimonial-time {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.google-logo {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+}
+
+.star-rating {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.star {
+  font-size: 1.25rem;
+  color: #d0d0d0;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: #ffc93a;
+  text-shadow: 0 2px 4px rgba(255, 201, 58, 0.3);
+}
+
+.testimonial-quote {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  color: var(--text-dark);
+  line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
 }
 
 .testimonial-service {
-  margin: 0.5rem 0 0 0;
-  font-size: 0.9rem;
-  color: #666;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -40,7 +105,22 @@
     padding: 1.5rem;
   }
 
-  .testimonial-quote {
+  .author-avatar {
+    width: 40px;
+    height: 40px;
     font-size: 1rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-quote {
+    font-size: 0.95rem;
+  }
+
+  .google-logo {
+    width: 20px;
+    height: 20px;
   }
 }

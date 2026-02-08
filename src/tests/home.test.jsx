@@ -71,9 +71,9 @@ describe('Home Page', () => {
       initialEntries: ['/'],
     });
     render(<RouterProvider router={router} />);
-    expect(screen.getByText(/sarah m\./i)).toBeInTheDocument();
-    expect(screen.getByText(/james k\./i)).toBeInTheDocument();
-    expect(screen.getByText(/maria l\./i)).toBeInTheDocument();
+    expect(screen.getByText(/lovely simon/i)).toBeInTheDocument();
+    expect(screen.getByText(/hi hi/i)).toBeInTheDocument();
+    expect(screen.getByText(/josh seiden/i)).toBeInTheDocument();
   });
 
   it('renders testimonial service types', () => {
@@ -82,7 +82,7 @@ describe('Home Page', () => {
     });
     render(<RouterProvider router={router} />);
     // Check that testimonial cards with service types exist
-    expect(screen.getByText(/sarah m\./i)).toBeInTheDocument();
+    expect(screen.getByText(/lovely simon/i)).toBeInTheDocument();
     const plumbingService = screen.queryAllByText(/plumbing/i);
     const electricalService = screen.queryAllByText(/electrical/i);
     const handymanService = screen.queryAllByText(/handyman/i);

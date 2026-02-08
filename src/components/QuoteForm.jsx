@@ -91,8 +91,17 @@ function QuoteForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      // Form is valid - submission logic will be added in Prompt 9
-      console.log('Form is valid:', formData);
+      // Form is valid - in production, submit to backend API
+      // Example: fetch('/api/quotes', { method: 'POST', body: JSON.stringify(formData) })
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        serviceType: '',
+        message: '',
+      });
+      setTouched({});
+      // Show success message to user (implementation in Prompt 9)
     }
   };
 

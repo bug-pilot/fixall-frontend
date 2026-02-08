@@ -155,7 +155,6 @@ describe('QuoteForm Component', () => {
 
   it('submits form with valid data', async () => {
     const user = userEvent.setup();
-    const consoleSpy = vi.spyOn(console, 'log');
     
     render(<QuoteForm />);
     
@@ -168,20 +167,14 @@ describe('QuoteForm Component', () => {
     const submitBtn = screen.getByRole('button', { name: /request a quote/i });
     await user.click(submitBtn);
 
+    // After successful submission, form fields should be cleared
     await waitFor(() => {
-      expect(consoleSpy).toHaveBeenCalledWith(
-        'Form is valid:',
-        expect.objectContaining({
-          name: 'John Doe',
-          email: 'john@example.com',
-          phone: '(123) 456-7890',
-          serviceType: 'Plumbing',
-          message: 'I need my kitchen sink fixed',
-        })
-      );
+      expect(screen.getByLabelText(/name/i)).toHaveValue('');
+      expect(screen.getByLabelText(/email/i)).toHaveValue('');
+      expect(screen.getByLabelText(/phone number/i)).toHaveValue('');
+      expect(screen.getByLabelText(/service type/i)).toHaveValue('');
+      expect(screen.getByLabelText(/message/i)).toHaveValue('');
     });
-    
-    consoleSpy.mockRestore();
   });
 
   it('prevents form submission with invalid data', async () => {
