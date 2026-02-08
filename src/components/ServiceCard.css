@@ -20,15 +20,19 @@
 .service-card-image {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 250px;
   background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 1rem;
   transition: transform 0.4s ease;
 }
 
@@ -106,7 +110,7 @@
   }
 
   .service-card-image {
-    height: 160px;
+    height: 200px;
   }
 
   .service-card-icon {
