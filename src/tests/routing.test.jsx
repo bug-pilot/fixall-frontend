@@ -38,7 +38,7 @@ describe('Routing', () => {
     });
     render(<RouterProvider router={router} />);
     expect(
-      screen.getByRole('heading', { name: /^services$/i })
+      screen.getByRole('heading', { name: /our services/i })
     ).toBeInTheDocument();
   });
 

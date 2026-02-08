@@ -1,0 +1,240 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Services Page > matches snapshot 1`] = `
+<div>
+  <div
+    class="page page-services"
+  >
+    <section
+      class="services-hero"
+    >
+      <div
+        class="services-hero-container"
+      >
+        <h1>
+          Our Services
+        </h1>
+        <p>
+          Professional home repair and maintenance services
+        </p>
+      </div>
+    </section>
+    <section
+      class="service-section"
+    >
+      <div
+        class="service-section-container"
+      >
+        <h2>
+          🔧 Plumbing Services
+        </h2>
+        <div
+          class="service-cards-grid"
+        >
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-icon"
+            >
+              💧
+            </div>
+            <h3
+              class="service-title"
+            >
+              Leak Repair
+            </h3>
+            <p
+              class="service-description"
+            >
+              Fast diagnosis and repair of water leaks in pipes, fixtures, and joints.
+            </p>
+          </article>
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-icon"
+            >
+              💧
+            </div>
+            <h3
+              class="service-title"
+            >
+              Drain Cleaning
+            </h3>
+            <p
+              class="service-description"
+            >
+              Professional drain cleaning and unclogging services for all pipes.
+            </p>
+          </article>
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-icon"
+            >
+              💧
+            </div>
+            <h3
+              class="service-title"
+            >
+              Fixture Installation
+            </h3>
+            <p
+              class="service-description"
+            >
+              Expert installation of sinks, faucets, toilets, and other fixtures.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section
+      class="service-section service-section--alt"
+    >
+      <div
+        class="service-section-container"
+      >
+        <h2>
+          ⚡ Electrical Services
+        </h2>
+        <div
+          class="service-cards-grid"
+        >
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-icon"
+            >
+              ⚡
+            </div>
+            <h3
+              class="service-title"
+            >
+              Circuit Installation
+            </h3>
+            <p
+              class="service-description"
+            >
+              Safe installation of new circuits and electrical upgrades.
+            </p>
+          </article>
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-icon"
+            >
+              ⚡
+            </div>
+            <h3
+              class="service-title"
+            >
+              Outlet & Switch Repair
+            </h3>
+            <p
+              class="service-description"
+            >
+              Repair and replacement of faulty outlets, switches, and breakers.
+            </p>
+          </article>
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-icon"
+            >
+              ⚡
+            </div>
+            <h3
+              class="service-title"
+            >
+              Lighting Solutions
+            </h3>
+            <p
+              class="service-description"
+            >
+              Installation and repair of interior and exterior lighting systems.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section
+      class="service-section"
+    >
+      <div
+        class="service-section-container"
+      >
+        <h2>
+          🔨 Handyman Services
+        </h2>
+        <div
+          class="service-cards-grid"
+        >
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-icon"
+            >
+              🔨
+            </div>
+            <h3
+              class="service-title"
+            >
+              Drywall & Painting
+            </h3>
+            <p
+              class="service-description"
+            >
+              Wall repair, patching, and professional interior painting.
+            </p>
+          </article>
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-icon"
+            >
+              🔨
+            </div>
+            <h3
+              class="service-title"
+            >
+              Door & Window Repair
+            </h3>
+            <p
+              class="service-description"
+            >
+              Repair and installation of doors, windows, and frames.
+            </p>
+          </article>
+          <article
+            class="service-card"
+          >
+            <div
+              class="service-icon"
+            >
+              🔨
+            </div>
+            <h3
+              class="service-title"
+            >
+              General Repairs
+            </h3>
+            <p
+              class="service-description"
+            >
+              General home maintenance and repair services.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
