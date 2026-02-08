@@ -1,0 +1,141 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Reviews Page > matches snapshot 1`] = `
+<div>
+  <div
+    class="page page-reviews"
+  >
+    <section
+      class="reviews-hero"
+    >
+      <div
+        class="reviews-hero-container"
+      >
+        <h1>
+          Customer Reviews
+        </h1>
+        <p
+          class="reviews-tagline"
+        >
+          See what our satisfied customers have to say
+        </p>
+      </div>
+    </section>
+    <section
+      class="reviews-section"
+    >
+      <div
+        class="reviews-container"
+      >
+        <h2>
+          What Our Customers Say
+        </h2>
+        <div
+          class="reviews-grid"
+        >
+          <article
+            class="testimonial-card"
+          >
+            <blockquote
+              class="testimonial-quote"
+            >
+              "
+              FixAll came out on short notice and fixed our plumbing issue immediately. Great service and very professional!
+              "
+            </blockquote>
+            <footer
+              class="testimonial-footer"
+            >
+              <p
+                class="testimonial-author"
+              >
+                Sarah M.
+              </p>
+              <p
+                class="testimonial-service"
+              >
+                Plumbing Services
+              </p>
+            </footer>
+          </article>
+          <article
+            class="testimonial-card"
+          >
+            <blockquote
+              class="testimonial-quote"
+            >
+              "
+              Highly professional electrical work. They explained everything clearly, answered all my questions, and cleaned up after themselves.
+              "
+            </blockquote>
+            <footer
+              class="testimonial-footer"
+            >
+              <p
+                class="testimonial-author"
+              >
+                James K.
+              </p>
+              <p
+                class="testimonial-service"
+              >
+                Electrical Services
+              </p>
+            </footer>
+          </article>
+          <article
+            class="testimonial-card"
+          >
+            <blockquote
+              class="testimonial-quote"
+            >
+              "
+              Best handyman service we've found. Reliable, courteous, affordable, and they get the job done right the first time.
+              "
+            </blockquote>
+            <footer
+              class="testimonial-footer"
+            >
+              <p
+                class="testimonial-author"
+              >
+                Maria L.
+              </p>
+              <p
+                class="testimonial-service"
+              >
+                Handyman Services
+              </p>
+            </footer>
+          </article>
+          <article
+            class="testimonial-card"
+          >
+            <blockquote
+              class="testimonial-quote"
+            >
+              "
+              We've used FixAll multiple times for different projects. They're always punctual, professional, and deliver excellent results.
+              "
+            </blockquote>
+            <footer
+              class="testimonial-footer"
+            >
+              <p
+                class="testimonial-author"
+              >
+                Robert T.
+              </p>
+              <p
+                class="testimonial-service"
+              >
+                Multiple Services
+              </p>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

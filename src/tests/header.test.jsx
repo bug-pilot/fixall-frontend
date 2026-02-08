@@ -152,7 +152,7 @@ describe('Navigation Header', () => {
     await user.click(headerCtaButton);
 
     expect(
-      screen.getByRole('heading', { name: /^contact$/i })
+      screen.getByRole('heading', { name: /request a quote/i })
     ).toBeInTheDocument();
   });
 

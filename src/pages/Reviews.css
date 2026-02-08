@@ -1,0 +1,80 @@
+.page-reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-hero {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.reviews-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.reviews-hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.reviews-tagline {
+  font-size: 1.25rem;
+  margin: 0;
+  opacity: 0.95;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.reviews-section {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews-container h2 {
+  font-size: 2rem;
+  margin: 0 0 3rem 0;
+  color: #333;
+  text-align: center;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .reviews-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .reviews-hero h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .reviews-tagline {
+    font-size: 1rem;
+  }
+
+  .reviews-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .reviews-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .reviews-grid {
+    gap: 1.5rem;
+  }
+}

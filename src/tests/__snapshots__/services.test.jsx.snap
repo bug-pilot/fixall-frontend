@@ -20,7 +20,7 @@ exports[`Services Page > matches snapshot 1`] = `
       </div>
     </section>
     <section
-      class="service-section"
+      class="service-section service-section--alt"
     >
       <div
         class="service-section-container"
@@ -35,58 +35,146 @@ exports[`Services Page > matches snapshot 1`] = `
             class="service-card"
           >
             <div
-              class="service-icon"
+              class="service-card-image"
             >
-              💧
+              <img
+                alt="Leak Repair"
+                src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&h=300&fit=crop"
+              />
+              <div
+                class="service-card-icon"
+              >
+                💧
+              </div>
             </div>
-            <h3
-              class="service-title"
+            <div
+              class="service-card-content"
             >
-              Leak Repair
-            </h3>
-            <p
-              class="service-description"
-            >
-              Fast diagnosis and repair of water leaks in pipes, fixtures, and joints.
-            </p>
+              <h3
+                class="service-card-title"
+              >
+                Leak Repair
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                Fast diagnosis and repair of water leaks in pipes, fixtures, and joints.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Leak Repairs
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Pipe Work
+                </span>
+              </div>
+            </div>
           </article>
           <article
             class="service-card"
           >
             <div
-              class="service-icon"
+              class="service-card-image"
             >
-              💧
+              <img
+                alt="Plumbing Services"
+                src="https://images.unsplash.com/photo-1585707572537-64cfc0c03f7b?w=500&h=300&fit=crop"
+              />
+              <div
+                class="service-card-icon"
+              >
+                💧
+              </div>
             </div>
-            <h3
-              class="service-title"
+            <div
+              class="service-card-content"
             >
-              Drain Cleaning
-            </h3>
-            <p
-              class="service-description"
-            >
-              Professional drain cleaning and unclogging services for all pipes.
-            </p>
+              <h3
+                class="service-card-title"
+              >
+                Plumbing Services
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                From leaky faucets to pipe installations, I handle all your plumbing needs with precision and care. Emergency repairs available.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Main Line Maintenance
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Leak Repairs
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Fixture Installation
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Pipe Work
+                </span>
+              </div>
+            </div>
           </article>
           <article
             class="service-card"
           >
             <div
-              class="service-icon"
+              class="service-card-image"
             >
-              💧
+              <img
+                alt="Fixture Installation"
+                src="https://images.unsplash.com/photo-1584622181563-430f63602d4b?w=500&h=300&fit=crop"
+              />
+              <div
+                class="service-card-icon"
+              >
+                💧
+              </div>
             </div>
-            <h3
-              class="service-title"
+            <div
+              class="service-card-content"
             >
-              Fixture Installation
-            </h3>
-            <p
-              class="service-description"
-            >
-              Expert installation of sinks, faucets, toilets, and other fixtures.
-            </p>
+              <h3
+                class="service-card-title"
+              >
+                Fixture Installation
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                Expert installation of sinks, faucets, toilets, and other fixtures with professional care.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Fixture Installation
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Pipe Work
+                </span>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -107,64 +195,147 @@ exports[`Services Page > matches snapshot 1`] = `
             class="service-card"
           >
             <div
-              class="service-icon"
+              class="service-card-image"
             >
-              ⚡
+              <img
+                alt="Electrical Services"
+                src="https://images.unsplash.com/photo-1621905267537-b85faf00c4b7?w=500&h=300&fit=crop"
+              />
+              <div
+                class="service-card-icon"
+              >
+                ⚡
+              </div>
             </div>
-            <h3
-              class="service-title"
+            <div
+              class="service-card-content"
             >
-              Circuit Installation
-            </h3>
-            <p
-              class="service-description"
-            >
-              Safe installation of new circuits and electrical upgrades.
-            </p>
+              <h3
+                class="service-card-title"
+              >
+                Electrical Services
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                Expert electrical work for all your home needs. From installations to repairs, I provide safe, code-compliant solutions.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Circuit Installation
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Outlet & Switch Repair
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Lighting Solutions
+                </span>
+              </div>
+            </div>
           </article>
           <article
             class="service-card"
           >
             <div
-              class="service-icon"
+              class="service-card-image"
             >
-              ⚡
+              <img
+                alt="Outlet & Switch Repair"
+                src="https://images.unsplash.com/photo-1581092162562-40038f81f10e?w=500&h=300&fit=crop"
+              />
+              <div
+                class="service-card-icon"
+              >
+                ⚡
+              </div>
             </div>
-            <h3
-              class="service-title"
+            <div
+              class="service-card-content"
             >
-              Outlet & Switch Repair
-            </h3>
-            <p
-              class="service-description"
-            >
-              Repair and replacement of faulty outlets, switches, and breakers.
-            </p>
+              <h3
+                class="service-card-title"
+              >
+                Outlet & Switch Repair
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                Safe repair and replacement of faulty outlets, switches, and breakers with professional expertise.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Outlet & Switch Repair
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Circuit Installation
+                </span>
+              </div>
+            </div>
           </article>
           <article
             class="service-card"
           >
             <div
-              class="service-icon"
+              class="service-card-image"
             >
-              ⚡
+              <img
+                alt="Lighting Solutions"
+                src="https://images.unsplash.com/photo-1565636192335-14c46fa1120d?w=500&h=300&fit=crop"
+              />
+              <div
+                class="service-card-icon"
+              >
+                ⚡
+              </div>
             </div>
-            <h3
-              class="service-title"
+            <div
+              class="service-card-content"
             >
-              Lighting Solutions
-            </h3>
-            <p
-              class="service-description"
-            >
-              Installation and repair of interior and exterior lighting systems.
-            </p>
+              <h3
+                class="service-card-title"
+              >
+                Lighting Solutions
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                Installation and repair of interior and exterior lighting systems to brighten your home.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Lighting Solutions
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Installation
+                </span>
+              </div>
+            </div>
           </article>
         </div>
       </div>
     </section>
     <section
-      class="service-section"
+      class="service-section service-section--alt"
     >
       <div
         class="service-section-container"
@@ -179,58 +350,166 @@ exports[`Services Page > matches snapshot 1`] = `
             class="service-card"
           >
             <div
-              class="service-icon"
+              class="service-card-image"
             >
-              🔨
+              <img
+                alt="Interior & Exterior Painting"
+                src="https://images.unsplash.com/photo-1589939705066-5470cc9b6230?w=500&h=300&fit=crop"
+              />
+              <div
+                class="service-card-icon"
+              >
+                🔨
+              </div>
             </div>
-            <h3
-              class="service-title"
+            <div
+              class="service-card-content"
             >
-              Drywall & Painting
-            </h3>
-            <p
-              class="service-description"
-            >
-              Wall repair, patching, and professional interior painting.
-            </p>
+              <h3
+                class="service-card-title"
+              >
+                Interior & Exterior Painting
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                Transform your home with professional painting services. From color consultation to final touch-ups, I ensure a flawless finish every time.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Color Consultation
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Surface Preparation
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Premium Paints
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Clean Finish
+                </span>
+              </div>
+            </div>
           </article>
           <article
             class="service-card"
           >
             <div
-              class="service-icon"
+              class="service-card-image"
             >
-              🔨
+              <img
+                alt="General Handyman Work"
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop"
+              />
+              <div
+                class="service-card-icon"
+              >
+                🔨
+              </div>
             </div>
-            <h3
-              class="service-title"
+            <div
+              class="service-card-content"
             >
-              Door & Window Repair
-            </h3>
-            <p
-              class="service-description"
-            >
-              Repair and installation of doors, windows, and frames.
-            </p>
+              <h3
+                class="service-card-title"
+              >
+                General Handyman Work
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                Whatever needs fixing, building, or improving around your home. I've got the skills and tools to get the job done right.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Home Repairs
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Home Maintenance
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Assembly
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Maintenance
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Installations
+                </span>
+              </div>
+            </div>
           </article>
           <article
             class="service-card"
           >
             <div
-              class="service-icon"
+              class="service-card-image"
             >
-              🔨
+              <img
+                alt="Door & Window Repair"
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop"
+              />
+              <div
+                class="service-card-icon"
+              >
+                🔨
+              </div>
             </div>
-            <h3
-              class="service-title"
+            <div
+              class="service-card-content"
             >
-              General Repairs
-            </h3>
-            <p
-              class="service-description"
-            >
-              General home maintenance and repair services.
-            </p>
+              <h3
+                class="service-card-title"
+              >
+                Door & Window Repair
+              </h3>
+              <p
+                class="service-card-description"
+              >
+                Professional repair and installation of doors, windows, and frames to improve security and aesthetics.
+              </p>
+              <div
+                class="service-card-tags"
+              >
+                <span
+                  class="service-tag"
+                >
+                  Installation
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Repairs
+                </span>
+                <span
+                  class="service-tag"
+                >
+                  Home Maintenance
+                </span>
+              </div>
+            </div>
           </article>
         </div>
       </div>

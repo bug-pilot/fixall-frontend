@@ -1,0 +1,194 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Contact Page > matches snapshot 1`] = `
+<div>
+  <div
+    class="page page-contact"
+  >
+    <section
+      class="contact-hero"
+    >
+      <div
+        class="contact-hero-container"
+      >
+        <h1>
+          Request a Quote
+        </h1>
+        <p
+          class="contact-tagline"
+        >
+          Let us know what you need, and we'll provide a free estimate
+        </p>
+      </div>
+    </section>
+    <section
+      class="contact-section"
+    >
+      <div
+        class="contact-container"
+      >
+        <div
+          class="contact-content"
+        >
+          <div
+            class="contact-info"
+          >
+            <h2>
+              Get in Touch
+            </h2>
+            <p>
+              Fill out the form below with details about your project. We'll review your request and get back to you within 24 hours with a free quote.
+            </p>
+            <div
+              class="contact-details"
+            >
+              <div
+                class="contact-detail-item"
+              >
+                <h3>
+                  Service Areas
+                </h3>
+                <p>
+                  Edison, NJ and surrounding communities
+                </p>
+              </div>
+              <div
+                class="contact-detail-item"
+              >
+                <h3>
+                  Response Time
+                </h3>
+                <p>
+                  Usually within 24 hours
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="contact-form-wrapper"
+          >
+            <form
+              class="quote-form"
+              novalidate=""
+            >
+              <div
+                class="form-group"
+              >
+                <label
+                  for="name"
+                >
+                  Name *
+                </label>
+                <input
+                  class="form-input "
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="form-group"
+              >
+                <label
+                  for="email"
+                >
+                  Email *
+                </label>
+                <input
+                  class="form-input "
+                  id="email"
+                  name="email"
+                  placeholder="your.email@example.com"
+                  type="email"
+                  value=""
+                />
+              </div>
+              <div
+                class="form-group"
+              >
+                <label
+                  for="phone"
+                >
+                  Phone Number *
+                </label>
+                <input
+                  class="form-input "
+                  id="phone"
+                  name="phone"
+                  placeholder="(123) 456-7890"
+                  type="tel"
+                  value=""
+                />
+              </div>
+              <div
+                class="form-group"
+              >
+                <label
+                  for="serviceType"
+                >
+                  Service Type *
+                </label>
+                <select
+                  class="form-input form-select "
+                  id="serviceType"
+                  name="serviceType"
+                >
+                  <option
+                    value=""
+                  >
+                    Select a service...
+                  </option>
+                  <option
+                    value="Plumbing"
+                  >
+                    Plumbing
+                  </option>
+                  <option
+                    value="Electrical"
+                  >
+                    Electrical
+                  </option>
+                  <option
+                    value="Handyman"
+                  >
+                    Handyman
+                  </option>
+                  <option
+                    value="Multiple Services"
+                  >
+                    Multiple Services
+                  </option>
+                </select>
+              </div>
+              <div
+                class="form-group"
+              >
+                <label
+                  for="message"
+                >
+                  Message *
+                </label>
+                <textarea
+                  class="form-input form-textarea "
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your project..."
+                  rows="6"
+                />
+              </div>
+              <button
+                class="form-submit-btn"
+                type="submit"
+              >
+                Request a Quote
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

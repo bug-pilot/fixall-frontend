@@ -48,7 +48,7 @@ describe('Routing', () => {
     });
     render(<RouterProvider router={router} />);
     expect(
-      screen.getByRole('heading', { name: /^about$/i })
+      screen.getByRole('heading', { name: /about fixall home service/i })
     ).toBeInTheDocument();
   });
 
@@ -58,7 +58,7 @@ describe('Routing', () => {
     });
     render(<RouterProvider router={router} />);
     expect(
-      screen.getByRole('heading', { name: /^reviews$/i })
+      screen.getByRole('heading', { name: /customer reviews/i })
     ).toBeInTheDocument();
   });
 
@@ -68,7 +68,7 @@ describe('Routing', () => {
     });
     render(<RouterProvider router={router} />);
     expect(
-      screen.getByRole('heading', { name: /^contact$/i })
+      screen.getByRole('heading', { name: /request a quote/i })
     ).toBeInTheDocument();
   });
 

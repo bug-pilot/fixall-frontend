@@ -1,0 +1,147 @@
+.page-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.about-tagline {
+  font-size: 1.25rem;
+  margin: 0;
+  opacity: 0.95;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.about-story,
+.about-values,
+.about-service-area {
+  padding: 4rem 2rem;
+}
+
+.about-story {
+  background-color: white;
+}
+
+.about-values {
+  background-color: #f9f9f9;
+}
+
+.about-service-area {
+  background-color: white;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-story h2,
+.about-values h2,
+.about-service-area h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
+  color: #333;
+  text-align: center;
+}
+
+.about-story p,
+.about-service-area p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0 0 1.5rem 0;
+}
+
+.about-story p:last-child,
+.about-service-area p:last-child {
+  margin-bottom: 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-values .value-card {
+  background-color: white;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.value-card h3 {
+  font-size: 1.25rem;
+  color: #0066cc;
+  margin: 0 0 1rem 0;
+}
+
+.value-card p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-tagline {
+    font-size: 1rem;
+  }
+
+  .about-story,
+  .about-values,
+  .about-service-area {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-story h2,
+  .about-values h2,
+  .about-service-area h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-story p,
+  .about-service-area p {
+    font-size: 1rem;
+  }
+
+  .values-grid {
+    gap: 1.5rem;
+  }
+}

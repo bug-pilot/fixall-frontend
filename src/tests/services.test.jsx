@@ -10,37 +10,41 @@ describe('Services Page', () => {
 
   it('renders all three service sections', () => {
     render(<Services />);
-    expect(screen.getByText(/plumbing services/i)).toBeInTheDocument();
-    expect(screen.getByText(/electrical services/i)).toBeInTheDocument();
-    expect(screen.getByText(/handyman services/i)).toBeInTheDocument();
+    const headings = screen.getAllByRole('heading', { level: 2 });
+    const sectionHeadings = headings.map((h) => h.textContent);
+    expect(sectionHeadings.some((h) => /plumbing/i.test(h))).toBe(true);
+    expect(sectionHeadings.some((h) => /electrical/i.test(h))).toBe(true);
+    expect(sectionHeadings.some((h) => /handyman/i.test(h))).toBe(true);
   });
 
   it('renders plumbing service cards', () => {
     render(<Services />);
-    expect(screen.getByRole('heading', { name: /leak repair/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /drain cleaning/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /fixture installation/i })).toBeInTheDocument();
+    const allHeadings = screen.getAllByRole('heading', { level: 3 });
+    const headings = allHeadings.map((h) => h.textContent);
+    expect(headings.some((h) => /leak repair/i.test(h))).toBe(true);
+    expect(headings.some((h) => /fixture installation/i.test(h))).toBe(true);
   });
 
   it('renders electrical service cards', () => {
     render(<Services />);
-    expect(screen.getByRole('heading', { name: /circuit installation/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /outlet & switch repair/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /lighting solutions/i })).toBeInTheDocument();
+    const allHeadings = screen.getAllByRole('heading', { level: 3 });
+    const headings = allHeadings.map((h) => h.textContent);
+    expect(headings.some((h) => /outlet & switch repair/i.test(h))).toBe(true);
+    expect(headings.some((h) => /lighting solutions/i.test(h))).toBe(true);
   });
 
   it('renders handyman service cards', () => {
     render(<Services />);
-    expect(screen.getByRole('heading', { name: /drywall & painting/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /interior & exterior painting/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /general handyman work/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /door & window repair/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /general repairs/i })).toBeInTheDocument();
   });
 
   it('renders all service descriptions', () => {
     render(<Services />);
     expect(screen.getByText(/fast diagnosis and repair/i)).toBeInTheDocument();
-    expect(screen.getByText(/safe installation of new circuits/i)).toBeInTheDocument();
-    expect(screen.getByText(/wall repair, patching/i)).toBeInTheDocument();
+    expect(screen.getByText(/expert electrical work/i)).toBeInTheDocument();
+    expect(screen.getByText(/transform your home with professional painting/i)).toBeInTheDocument();
   });
 
   it('matches snapshot', () => {
